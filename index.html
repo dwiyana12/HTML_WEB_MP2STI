@@ -1,1040 +1,730 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title> HTML_Creaft — Student Portfolio</title>
+    <title>HTML_Creaft — Student Portfolio</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ================= NAVBAR ================= -->
     <header class="navbar">
-        <div class="container nav-container">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span>HTMLCraft</span>
+        </a>
 
-            <a href="#home" class="logo">
-                <span class="logo-mark">&lt;/&gt;</span>
-                <span>HTMLCraft</span>
-            </a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </div>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
-
     <main>
+      <!-- ================= HOME ================= -->
+      <section class="hero" id="home">
+        <div class="container hero-container">
+          <!-- Hero Text -->
+          <div class="hero-content">
+            <span class="hero-badge"> Student Portfolio </span>
 
-        <!-- ================= HOME ================= -->
-        <section class="hero" id="home">
+            <h1>
+              We Build,
+              <span>Learn & Create.</span>
+            </h1>
 
-            <div class="container hero-container">
+            <p class="hero-description">
+              Welcome to our group portfolio. We are a team of Information
+              Technology students who are passionate about technology,
+              creativity, and continuous learning.
+            </p>
 
-                <!-- Hero Text -->
-                <div class="hero-content">
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">
+                Explore Portfolio
+                <span>→</span>
+              </a>
 
-                    <span class="hero-badge">
-                        Student Portfolio
-                    </span>
-
-                    <h1>
-                        We Build,
-                        <span>Learn & Create.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Welcome to our group portfolio. We are a team of
-                        Information Technology students who are passionate
-                        about technology, creativity, and continuous learning.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">
-                            Explore Portfolio
-                            <span>→</span>
-                        </a>
-
-                        <a href="#contact" class="btn btn-secondary">
-                            Meet Our Team
-                        </a>
-                    </div>
-
-                    <!-- Small statistics -->
-                    <div class="hero-stats">
-
-                        <div class="stat">
-                            <strong>07</strong>
-                            <span>Members</span>
-                        </div>
-
-                        <div class="stat">
-                            <strong>0+</strong>
-                            <span>Projects</span>
-                        </div>
-
-                        <div class="stat">
-                            <strong>0+</strong>
-                            <span>Certificates</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Hero Visual -->
-                <div class="hero-visual">
-
-                    <div class="hero-image-wrapper">
-
-                        <div class="image-decoration decoration-one"></div>
-                        <div class="image-decoration decoration-two"></div>
-
-                        <div class="hero-image">
-                            <img
-                                src="assets/images/group-photo.jpg"
-                                alt="TechNova group photo"
-                            >
-                        </div>
-
-                        <!-- Floating Card -->
-                        <div class="floating-card floating-card-top">
-                            <span class="floating-icon">💻</span>
-                            <div>
-                                <strong>Tech Enthusiasts</strong>
-                                <small>Always Learning</small>
-                            </div>
-                        </div>
-
-                        <div class="floating-card floating-card-bottom">
-                            <span class="floating-icon">✦</span>
-                            <div>
-                                <strong>Creative Minds</strong>
-                                <small>Ideas into Reality</small>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
+              <a href="#contact" class="btn btn-secondary"> Meet Our Team </a>
             </div>
 
-        </section>
+            <!-- Small statistics -->
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>07</strong>
+                <span>Members</span>
+              </div>
 
+              <div class="stat">
+                <strong>0+</strong>
+                <span>Projects</span>
+              </div>
 
-        <!-- ================= ABOUT / INTRO ================= -->
-        <section class="about section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">WHO WE ARE</span>
-
-                    <h2>
-                        Growing Together,
-                        <span>Building the Future.</span>
-                    </h2>
-
-                    <p>
-                        Our portfolio represents our journey as students in
-                        Information Technology. Every project, certificate,
-                        and experience is part of our learning process.
-                    </p>
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-card">
-                        <div class="about-icon">01</div>
-
-                        <h3>Learn</h3>
-
-                        <p>
-                            Continuously developing our technical and
-                            problem-solving skills through projects and
-                            practical experiences.
-                        </p>
-                    </div>
-
-
-                    <div class="about-card">
-                        <div class="about-icon">02</div>
-
-                        <h3>Create</h3>
-
-                        <p>
-                            Turning ideas into useful digital projects
-                            through creativity, design, and technology.
-                        </p>
-                    </div>
-
-
-                    <div class="about-card">
-                        <div class="about-icon">03</div>
-
-                        <h3>Collaborate</h3>
-
-                        <p>
-                            Working together, sharing knowledge, and
-                            supporting each other to achieve better results.
-                        </p>
-                    </div>
-
-                </div>
-
+              <div class="stat">
+                <strong>0+</strong>
+                <span>Certificates</span>
+              </div>
             </div>
+          </div>
 
-        </section>
+          <!-- Hero Visual -->
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <div class="image-decoration decoration-one"></div>
+              <div class="image-decoration decoration-two"></div>
 
+              <div class="hero-image">
+                <img
+                  src="assets/images/group-photo.jpg"
+                  alt="TechNova group photo"
+                />
+              </div>
 
-        <!-- ================= PORTFOLIO ================= -->
-        <section class="portfolio section" id="portfolio">
-
-            <div class="container">
-
-                <div class="section-heading section-heading-center">
-
-                    <span class="section-label">
-                        OUR WORK
-                    </span>
-
-                    <h2>
-                        Featured
-                        <span>Portfolio</span>
-                    </h2>
-
-                    <p>
-                        A collection of projects created by our team
-                        throughout our learning journey.
-                    </p>
-
+              <!-- Floating Card -->
+              <div class="floating-card floating-card-top">
+                <span class="floating-icon">💻</span>
+                <div>
+                  <strong>Tech Enthusiasts</strong>
+                  <small>Always Learning</small>
                 </div>
+              </div>
 
-
-                <!-- Portfolio Filter -->
-                <div class="portfolio-filter">
-
-                    <button
-                        class="filter-btn active"
-                        data-filter="all">
-                        All
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="web">
-                        Web
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="design">
-                        Design
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="other">
-                        Other
-                    </button>
-
+              <div class="floating-card floating-card-bottom">
+                <span class="floating-icon">✦</span>
+                <div>
+                  <strong>Creative Minds</strong>
+                  <small>Ideas into Reality</small>
                 </div>
-
-
-                <!-- Portfolio Cards -->
-                <div class="portfolio-grid" id="portfolioGrid">
-
-                    <!-- Project 1 -->
-                    <article
-                        class="portfolio-card"
-                        data-category="web">
-
-                        <div class="portfolio-image">
-                            <img
-                                src="assets/images/project-1.jpg"
-                                alt="Student portfolio website"
-                            >
-
-                            <span class="portfolio-category">
-                                Web Development
-                            </span>
-                        </div>
-
-                        <div class="portfolio-content">
-
-                            <span class="portfolio-member">
-                                Member 01
-                            </span>
-
-                            <h3>
-                                Student Portfolio Website
-                            </h3>
-
-                            <p>
-                                A responsive portfolio website designed
-                                to showcase personal projects and skills.
-                            </p>
-
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <a
-                                href="#"
-                                class="project-link"
-                                target="_blank">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 2 -->
-                    <article
-                        class="portfolio-card"
-                        data-category="design">
-
-                        <div class="portfolio-image">
-                            <img
-                                src="assets/images/project-2.jpg"
-                                alt="UI UX design project"
-                            >
-
-                            <span class="portfolio-category">
-                                UI/UX Design
-                            </span>
-                        </div>
-
-                        <div class="portfolio-content">
-
-                            <span class="portfolio-member">
-                                Member 02
-                            </span>
-
-                            <h3>
-                                Mobile App UI Design
-                            </h3>
-
-                            <p>
-                                A modern mobile application interface
-                                created with a focus on usability and
-                                visual consistency.
-                            </p>
-
-                            <div class="tech-stack">
-                                <span>Figma</span>
-                                <span>UI/UX</span>
-                                <span>Prototype</span>
-                            </div>
-
-                            <a
-                                href="#"
-                                class="project-link"
-                                target="_blank">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 3 -->
-                    <article
-                        class="portfolio-card"
-                        data-category="web">
-
-                        <div class="portfolio-image">
-                            <img
-                                src="assets/images/project-3.jpg"
-                                alt="Landing page project"
-                            >
-
-                            <span class="portfolio-category">
-                                Web Development
-                            </span>
-                        </div>
-
-                        <div class="portfolio-content">
-
-                            <span class="portfolio-member">
-                                Member 03
-                            </span>
-
-                            <h3>
-                                Modern Landing Page
-                            </h3>
-
-                            <p>
-                                A clean and responsive landing page
-                                developed as a frontend development project.
-                            </p>
-
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-
-                            <a
-                                href="#"
-                                class="project-link"
-                                target="_blank">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 4 -->
-                    <article
-                        class="portfolio-card"
-                        data-category="other">
-
-                        <div class="portfolio-image">
-                            <img
-                                src="assets/images/project-4.jpg"
-                                alt="Creative technology project"
-                            >
-
-                            <span class="portfolio-category">
-                                Creative Tech
-                            </span>
-                        </div>
-
-                        <div class="portfolio-content">
-
-                            <span class="portfolio-member">
-                                Member 04
-                            </span>
-
-                            <h3>
-                                Creative Technology Project
-                            </h3>
-
-                            <p>
-                                An experimental project combining
-                                creativity and technology to solve a
-                                simple real-world problem.
-                            </p>
-
-                            <div class="tech-stack">
-                                <span>Creative</span>
-                                <span>Technology</span>
-                            </div>
-
-                            <a
-                                href="#"
-                                class="project-link"
-                                target="_blank">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
+              </div>
             </div>
-
-        </section>
-
-
-        <!-- ================= CERTIFICATION ================= -->
-        <section class="certification section">
-
-            <div class="container">
-
-                <div class="section-heading section-heading-center">
-
-                    <span class="section-label">
-                        ACHIEVEMENTS
-                    </span>
-
-                    <h2>
-                        Our
-                        <span>Certifications</span>
-                    </h2>
-
-                    <p>
-                        Certificates obtained by our members as part
-                        of our learning and development journey.
-                    </p>
-
-                </div>
-
-
-                <div class="certificate-grid">
-
-                    <!-- Certificate 1 -->
-                    <article class="certificate-card">
-
-                        <div class="certificate-image">
-
-                            <img
-                                src="https://template.canva.com/EAF7UsuQzts/1/0/1600w-DtaxdL6WdUE.jpg"
-                                alt="Certificate Member 01"
-                            >
-
-                        </div>
-
-                        <div class="certificate-content">
-
-                            <span class="certificate-member">
-                                Member 01
-                            </span>
-
-                            <h3>
-                                [Certification Name]
-                            </h3>
-
-                            <p>
-                                [Platform / Institution]
-                            </p>
-
-                            <span class="certificate-year">
-                                2026
-                            </span>
-
-                            <a
-                                href="#"
-                                target="https://template.canva.com/EAF7UsuQzts/1/0/1600w-DtaxdL6WdUE.jpg"
-                                class="certificate-link">
-                                View Certificate →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Certificate 2 -->
-                    <article class="certificate-card">
-
-                        <div class="certificate-image">
-
-                            <img
-                                src="assets/certificates/certificate-2.jpg"
-                                alt="Certificate Member 02"
-                            >
-
-                        </div>
-
-                        <div class="certificate-content">
-
-                            <span class="certificate-member">
-                                Member 02
-                            </span>
-
-                            <h3>
-                                [Certification Name]
-                            </h3>
-
-                            <p>
-                                [Platform / Institution]
-                            </p>
-
-                            <span class="certificate-year">
-                                2026
-                            </span>
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                class="certificate-link">
-                                View Certificate →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Certificate 3 -->
-                    <article class="certificate-card">
-
-                        <div class="certificate-image">
-
-                            <img
-                                src="assets/certificates/certificate-3.jpg"
-                                alt="Certificate Member 03"
-                            >
-
-                        </div>
-
-                        <div class="certificate-content">
-
-                            <span class="certificate-member">
-                                Member 03
-                            </span>
-
-                            <h3>
-                                [Certification Name]
-                            </h3>
-
-                            <p>
-                                [Platform / Institution]
-                            </p>
-
-                            <span class="certificate-year">
-                                2026
-                            </span>
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                class="certificate-link">
-                                View Certificate →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-        <section class="contact section" id="contact">
-
-            <div class="container">
-
-                <div class="section-heading section-heading-center">
-
-                    <span class="section-label">
-                        LET'S CONNECT
-                    </span>
-
-                    <h2>
-                        Meet Our
-                        <span>Team</span>
-                    </h2>
-
-                    <p>
-                        Connect with our members through their
-                        professional and social platforms.
-                    </p>
-
-                </div>
-
-
-                <div class="members-grid">
-
-                    <!-- Member 1 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="WhatsApp Image 2026-08-25 at 10.43.18.jpeg"
-                                alt="Member 01"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 01
-                            </span>
-
-                            <h3>
-                                Dwiyana Listiandani
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/ynalstdn"
-                                    target="_blank"
-                                    aria-label="Instagram">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href="https://www.linkedin.com/in/dwi-yana-69056b42b/"
-                                    target="_blank"
-                                    aria-label="LinkedIn">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/dwiyana12"
-                                    target="_blank"
-                                    aria-label="GitHub">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Member 2 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="1787063438136.png"
-                                alt="Member 02"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 02
-                            </span>
-
-                            <h3>
-                                Ghani Prasetyo
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/username"
-                                    target="_blank">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href="https://www.linkedin.com/in/ghani-prasetyo-9216b642a?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-                                    target="_blank">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/Ghani-Prasetyo"
-                                    target="_blank">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Member 3 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="1787152727975.jpg"
-                                alt="Member 03"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 03
-                            </span>
-
-                            <h3>
-                                Sabrina Aprilianti
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/sbrinaap_"
-                                    target="_blank">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href="https://id.linkedin.com/in/sabrina-aprilianti-33143242b
-"
-                                    target="_blank">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/sabrinaaprilianti440-ai"
-                                    target="_blank">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Member 4 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="1787227420527.png"
-                                alt="Member 04"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 04
-                            </span>
-
-                            <h3>
-                                Varellin Pra Vtra Hadi Suyono
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/username"
-                                    target="_blank">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href=" https://www.linkedin.com/in/varelin-pra-a5774842b/"
-                                    target="_blank">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/Varellin-node"
-                                    target="_blank">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Member 5 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="1787143454616.png"
-                                alt="Member 05"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 05
-                            </span>
-
-                            <h3>
-                                Esty Rachma Wardhani
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/rchm4__"
-                                    target="_blank">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href="https://www.linkedin.com/in/esty-rachma-wardhani-a84837411?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                                    target="_blank">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/EstyRachmaWardhani"
-                                    target="_blank">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Member 6 -->
-                    <article class="member-card">
-
-                        <div class="member-image">
-                            <img
-                                src="1787232842586.png"
-                                alt="Member 06"
-                            >
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-role">
-                                Member 06
-                            </span>
-
-                            <h3>
-                                Muhammad Satria Hadiansyah
-                            </h3>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="https://instagram.com/sat.ria_h"
-                                    target="_blank">
-                                    Instagram
-                                </a>
-
-                                <a
-                                    href="https://www.linkedin.com/in/m-satria-hadiansyah-a6946842b"
-                                    target="_blank">
-                                    LinkedIn
-                                </a>
-
-                                <a
-                                    href="https://github.com/Satria-Hadiansyah"
-                                    target="_blank">
-                                    GitHub
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-                    <!-- Member 7 -->
-<article class="member-card">
-
-    <div class="member-image">
-        <img
-            src="1787231195574.png"
-            alt="Member 07"
-        >
-    </div>
-
-    <div class="member-info">
-
-        <span class="member-role">
-            Member 07
-        </span>
-
-        <h3>
-            Ahmad Zaki Kurniawan
-        </h3>
-
-        <div class="social-links">
-
-            <a
-                href="https://instagram.com/ryzafocalors"
-                target="_blank">
-                Instagram
-            </a>
-
-            <a
-                href="https://www.linkedin.com/in/ahmad-zaki-63880842b"
-                target="_blank">
-                LinkedIn
-            </a>
-
-            <a
-                href="https://github.com/AhmadZakiKurniawan"
-                target="_blank">
-                GitHub
-            </a>
-
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- ================= ABOUT / INTRO ================= -->
+      <section class="about section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">WHO WE ARE</span>
 
-</article>
+            <h2>
+              Growing Together,
+              <span>Building the Future.</span>
+            </h2>
 
-                </div>
+            <p>
+              Our portfolio represents our journey as students in Information
+              Technology. Every project, certificate, and experience is part of
+              our learning process.
+            </p>
+          </div>
 
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-icon">01</div>
+
+              <h3>Learn</h3>
+
+              <p>
+                Continuously developing our technical and problem-solving skills
+                through projects and practical experiences.
+              </p>
             </div>
 
-        </section>
+            <div class="about-card">
+              <div class="about-icon">02</div>
 
+              <h3>Create</h3>
+
+              <p>
+                Turning ideas into useful digital projects through creativity,
+                design, and technology.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-icon">03</div>
+
+              <h3>Collaborate</h3>
+
+              <p>
+                Working together, sharing knowledge, and supporting each other
+                to achieve better results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PORTFOLIO ================= -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="section-heading section-heading-center">
+            <span class="section-label"> OUR WORK </span>
+
+            <h2>
+              Featured
+              <span>Portfolio</span>
+            </h2>
+
+            <p>
+              A collection of projects created by our team throughout our
+              learning journey.
+            </p>
+          </div>
+
+          <!-- Portfolio Filter -->
+          <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+
+            <button class="filter-btn" data-filter="web">Web</button>
+
+            <button class="filter-btn" data-filter="design">Design</button>
+
+            <button class="filter-btn" data-filter="other">Other</button>
+          </div>
+
+          <!-- Portfolio Cards -->
+          <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Project 1 -->
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-image">
+                <img
+                  src="assets/images/project-1.jpg"
+                  alt="Student portfolio website"
+                />
+
+                <span class="portfolio-category"> Web Development </span>
+              </div>
+
+              <div class="portfolio-content">
+                <span class="portfolio-member"> Member 01 </span>
+
+                <h3>Student Portfolio Website</h3>
+
+                <p>
+                  A responsive portfolio website designed to showcase personal
+                  projects and skills.
+                </p>
+
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link" target="_blank">
+                  View Project →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="portfolio-card" data-category="design">
+              <div class="portfolio-image">
+                <img
+                  src="assets/images/project-2.jpg"
+                  alt="UI UX design project"
+                />
+
+                <span class="portfolio-category"> UI/UX Design </span>
+              </div>
+
+              <div class="portfolio-content">
+                <span class="portfolio-member"> Member 02 </span>
+
+                <h3>Mobile App UI Design</h3>
+
+                <p>
+                  A modern mobile application interface created with a focus on
+                  usability and visual consistency.
+                </p>
+
+                <div class="tech-stack">
+                  <span>Figma</span>
+                  <span>UI/UX</span>
+                  <span>Prototype</span>
+                </div>
+
+                <a href="#" class="project-link" target="_blank">
+                  View Project →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="portfolio-card" data-category="web">
+              <div class="portfolio-image">
+                <img
+                  src="assets/images/project-3.jpg"
+                  alt="Landing page project"
+                />
+
+                <span class="portfolio-category"> Web Development </span>
+              </div>
+
+              <div class="portfolio-content">
+                <span class="portfolio-member"> Member 03 </span>
+
+                <h3>Modern Landing Page</h3>
+
+                <p>
+                  A clean and responsive landing page developed as a frontend
+                  development project.
+                </p>
+
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+
+                <a href="#" class="project-link" target="_blank">
+                  View Project →
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="portfolio-card" data-category="other">
+              <div class="portfolio-image">
+                <img
+                  src="assets/images/project-4.jpg"
+                  alt="Creative technology project"
+                />
+
+                <span class="portfolio-category"> Creative Tech </span>
+              </div>
+
+              <div class="portfolio-content">
+                <span class="portfolio-member"> Member 04 </span>
+
+                <h3>Creative Technology Project</h3>
+
+                <p>
+                  An experimental project combining creativity and technology to
+                  solve a simple real-world problem.
+                </p>
+
+                <div class="tech-stack">
+                  <span>Creative</span>
+                  <span>Technology</span>
+                </div>
+
+                <a href="#" class="project-link" target="_blank">
+                  View Project →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICATION ================= -->
+      <section class="certification section">
+        <div class="container">
+          <div class="section-heading section-heading-center">
+            <span class="section-label"> ACHIEVEMENTS </span>
+
+            <h2>
+              Our
+              <span>Certifications</span>
+            </h2>
+
+            <p>
+              Certificates obtained by our members as part of our learning and
+              development journey.
+            </p>
+          </div>
+
+          <div class="certificate-grid">
+            <!-- Certificate 1 -->
+            <article class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="https://template.canva.com/EAF7UsuQzts/1/0/1600w-DtaxdL6WdUE.jpg"
+                  alt="Certificate Member 01"
+                />
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-member"> Member 01 </span>
+
+                <h3>[Certification Name]</h3>
+
+                <p>[Platform / Institution]</p>
+
+                <span class="certificate-year"> 2026 </span>
+
+                <a
+                  href="#"
+                  target="https://template.canva.com/EAF7UsuQzts/1/0/1600w-DtaxdL6WdUE.jpg"
+                  class="certificate-link"
+                >
+                  View Certificate →
+                </a>
+              </div>
+            </article>
+
+            <!-- Certificate 2 -->
+            <article class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="assets/certificates/certificate-2.jpg"
+                  alt="Certificate Member 02"
+                />
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-member"> Member 02 </span>
+
+                <h3>[Certification Name]</h3>
+
+                <p>[Platform / Institution]</p>
+
+                <span class="certificate-year"> 2026 </span>
+
+                <a href="#" target="_blank" class="certificate-link">
+                  View Certificate →
+                </a>
+              </div>
+            </article>
+
+            <!-- Certificate 3 -->
+            <article class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="assets/certificates/certificate-3.jpg"
+                  alt="Certificate Member 03"
+                />
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-member"> Member 03 </span>
+
+                <h3>[Certification Name]</h3>
+
+                <p>[Platform / Institution]</p>
+
+                <span class="certificate-year"> 2026 </span>
+
+                <a href="#" target="_blank" class="certificate-link">
+                  View Certificate →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-heading section-heading-center">
+            <span class="section-label"> LET'S CONNECT </span>
+
+            <h2>
+              Meet Our
+              <span>Team</span>
+            </h2>
+
+            <p>
+              Connect with our members through their professional and social
+              platforms.
+            </p>
+          </div>
+
+          <div class="members-grid">
+            <!-- Member 1 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img
+                  src="WhatsApp Image 2026-08-25 at 10.43.18.jpeg"
+                  alt="Member 01"
+                />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 01 </span>
+
+                <h3>Dwiyana Listiandani</h3>
+
+                <div class="social-links">
+                  <a
+                    href="https://instagram.com/ynalstdn"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/dwi-yana-69056b42b/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a
+                    href="https://github.com/dwiyana12"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Member 2 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787063438136.png" alt="Member 02" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 02 </span>
+
+                <h3>Ghani Prasetyo</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/ghanipwp_" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/ghani-prasetyo-9216b642a?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a href="https://github.com/Ghani-Prasetyo" target="_blank">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Member 3 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787152727975.jpg" alt="Member 03" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 03 </span>
+
+                <h3>Sabrina Aprilianti</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/sbrinaap_" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://id.linkedin.com/in/sabrina-aprilianti-33143242b
+"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a
+                    href="https://github.com/sabrinaaprilianti440-ai"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Member 4 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787227420527.png" alt="Member 04" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 04 </span>
+
+                <h3>Varellin Pra Vtra Hadi Suyono</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/username" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href=" https://www.linkedin.com/in/varelin-pra-a5774842b/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a href="https://github.com/Varellin-node" target="_blank">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Member 5 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787143454616.png" alt="Member 05" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 05 </span>
+
+                <h3>Esty Rachma Wardhani</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/rchm4__" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/esty-rachma-wardhani-a84837411?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a
+                    href="https://github.com/EstyRachmaWardhani"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Member 6 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787232842586.png" alt="Member 06" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 06 </span>
+
+                <h3>Muhammad Satria Hadiansyah</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/sat.ria_h" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/m-satria-hadiansyah-a6946842b"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a
+                    href="https://github.com/Satria-Hadiansyah"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Member 7 -->
+            <article class="member-card">
+              <div class="member-image">
+                <img src="1787231195574.png" alt="Member 07" />
+              </div>
+
+              <div class="member-info">
+                <span class="member-role"> Member 07 </span>
+
+                <h3>Ahmad Zaki Kurniawan</h3>
+
+                <div class="social-links">
+                  <a href="https://instagram.com/ryzafocalors" target="_blank">
+                    Instagram
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/ahmad-zaki-63880842b"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+
+                  <a
+                    href="https://github.com/AhmadZakiKurniawan"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>TechNova</span>
+          </a>
 
-        <div class="container footer-container">
-
-            <div class="footer-brand">
-
-                <a href="#home" class="logo">
-                    <span class="logo-mark">&lt;/&gt;</span>
-                    <span>TechNova</span>
-                </a>
-
-                <p>
-                    Student portfolio built with passion,
-                    creativity, and technology.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-
-            </div>
-
+          <p>
+            Student portfolio built with passion, creativity, and technology.
+          </p>
         </div>
 
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 TechNova. Built by Information Technology Students.
-            </p>
-
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
         </div>
+      </div>
 
+      <div class="footer-bottom">
+        <p>© 2026 TechNova. Built by Information Technology Students.</p>
+      </div>
     </footer>
-
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
